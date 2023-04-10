@@ -194,7 +194,7 @@ class TestPetShop(unittest.TestCase):
         customer = self.customers[0]
         pet = find_pet_by_name(self.cc_pet_shop,"Arthur")
 
-        #sell_pet_to_customer(self.cc_pet_shop, pet, customer)
+        sell_pet_to_customer(self.cc_pet_shop, pet, customer)
 
         self.assertEqual(1, get_customer_pet_count(customer))
         self.assertEqual(1, get_pets_sold(self.cc_pet_shop))
@@ -206,7 +206,7 @@ class TestPetShop(unittest.TestCase):
         customer = self.customers[0]
         pet = find_pet_by_name(self.cc_pet_shop,"Dave")
 
-        #sell_pet_to_customer(self.cc_pet_shop, pet, customer)
+        sell_pet_to_customer(self.cc_pet_shop, pet, customer)
 
         self.assertEqual(0, get_customer_pet_count(customer))
         self.assertEqual(0, get_pets_sold(self.cc_pet_shop))
@@ -218,7 +218,7 @@ class TestPetShop(unittest.TestCase):
         customer = self.customers[1]
         pet = find_pet_by_name(self.cc_pet_shop,"Arthur")
 
-        #sell_pet_to_customer(self.cc_pet_shop, pet, customer)
+        sell_pet_to_customer(self.cc_pet_shop, pet, customer)
 
         self.assertEqual(0, get_customer_pet_count(customer))
         self.assertEqual(0, get_pets_sold(self.cc_pet_shop))
